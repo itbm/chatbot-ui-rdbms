@@ -1,0 +1,36 @@
+{
+  "name": "@chatbot-ui/rdbms",
+  "version": "1.0.2",
+  "description": "Relational database support for the Chatbot UI project.",
+  "homepage": "https://github.com/jorge-menjivar/chatbot-ui-rdbms#readme",
+  "repository": "https://github.com/jorge-menjivar/chatbot-ui-rdbms",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "react",
+    "nodejs",
+    "nextjs",
+    "database",
+    "chatbot",
+    "chatbot-ui"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "tsc -w --project tsconfig.json",
+    "clean": "rm -rf handlers helpers rdbms types utils index.d.ts index.js client-side.d.ts client-side.js server-side.d.ts server-side.js"
+  },
+  "author": "Jorge Menjivar <jorgemenjivar1997@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typeorm": "^0.3.15"
+  },
+  "peerDependencies": {
+    "@chatbot-ui/core": "^1.0.0",
+    "next": "^13.2.4"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/node": "^20.1.0",
+    "typescript": "^5.0.4"
+  }
+}
